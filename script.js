@@ -11,11 +11,8 @@ async function callPosts(){
 
     // GET SAVED TOKEN
 
-    // logintBtnDibv.style.display = "none";
-    // logouttBtnDibv.style.display = "visible";
-
+   
     if(saved_token != null) {
-        // console.log(saved_token);
         logintBut.style.display = "none";
     }else {
         logoutBut.style.display = "none";
