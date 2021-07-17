@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="login.js" type="module"></script>
+    <title>semproj2</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Wiki Style</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <div class="logedInNavs">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+     
+                <li class=" nav-item">
+                  <a class="nav-link" aria-current="page" href="/addPost.html">Add Post</a>
+                </li>
+                <li class=" nav-item">
+                  <a class="nav-link" aria-current="page" onclick="logout();">Logout</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="logedOutNavs">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class=" nav-item">
+                  <a class="nav-link" aria-current="page" href="login.html">Login</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="wrap">
+
+        <h1>Login</h1>
+
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="username">
+            <label for="floatingInput">User Name</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password">
+            <label for="floatingPassword">Password</label> <br>
+
+            <div class="d-grid">
+                <button class="btn btn-primary" type="button" id="login_btn_id">Log In</button>
+              </div>
+
+          </div>
+    </div>
+
+      </div>
+
+    <footer>
+        <nav class="navbar fixed-bottom navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand"  href="index.html">Wiki Style</a>
+              <a class="navbar-brand"  href="#"><img src="image/facebook.png" width="40px" alt=""></a>
+              <a class="navbar-brand"  href="#"><img src="image/instagram.png" width="40px" alt=""></a>
+              <a class="navbar-brand"  href="#"><img src="image/twitter.png" width="40px" alt=""></a>
+
+            </div>
+          </nav>
+    </footer>
+    <script src="script.js" type="module"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

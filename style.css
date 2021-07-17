@@ -1,0 +1,29 @@
+body{
+    width: 100vw;
+    
+}
+.wraphome{
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 80vw;
+    overflow-x: hidden;
+    background-size: contain;
+   
+}
+.container{
+    max-width: 80vw;
+}
+
+.wrap{
+    padding: 15px 10px 20px 10px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 40vw;
+    height: 35vh;
+    border: solid;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
